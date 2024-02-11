@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/project-1-cynthiaugwu/static/css/main.a55a32bf.css",
+    "main.js": "/project-1-cynthiaugwu/static/js/main.8bc7f5d0.js",
+    "static/media/cynthia.png": "/project-1-cynthiaugwu/static/media/cynthia.62617c4c3526af0c2d00.png",
+    "static/media/plug.png": "/project-1-cynthiaugwu/static/media/plug.1606c4ea91f71144a1a6.png",
+    "static/media/GeneralSans-Medium.otf": "/project-1-cynthiaugwu/static/media/GeneralSans-Medium.9e7904e31d714524f2d9.otf",
+    "static/media/GeneralSans-Regular.otf": "/project-1-cynthiaugwu/static/media/GeneralSans-Regular.8b8c806d335280408bfe.otf",
+    "static/media/hudu.png": "/project-1-cynthiaugwu/static/media/hudu.1319c340f775d9aa5d06.png",
+    "static/media/ixperience.png": "/project-1-cynthiaugwu/static/media/ixperience.bb2c9d80192828605f05.png",
+    "index.html": "/project-1-cynthiaugwu/index.html",
+    "main.a55a32bf.css.map": "/project-1-cynthiaugwu/static/css/main.a55a32bf.css.map",
+    "main.8bc7f5d0.js.map": "/project-1-cynthiaugwu/static/js/main.8bc7f5d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a55a32bf.css",
+    "static/js/main.8bc7f5d0.js"
+  ]
+}
