@@ -1,0 +1,74 @@
+.about {
+    height: calc(100vh - 84px);
+    color: white;
+}
+
+.myself {
+    margin-top: 15vw;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    padding-right: 10.5vw;
+    padding-left: 3vw;
+}
+
+.profile-picture {
+    /* background-color: brown; */
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    margin-right: 24px;
+}
+
+.desc {
+    /* background-color: green; */
+    padding-left: 60px;
+    flex:0 1 450px;
+}
+
+.title {
+    opacity: .7;
+    text-transform: uppercase;
+}
+
+.aboutus {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.talk {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 18px;
+    border-radius: 50px;
+}
+
+.youtube {
+    margin-left: 3vw;
+    margin-top: 10vw;
+}
+
+.youtube a {
+    line-height: 3vw;
+    color: white;
+    text-decoration: none;
+    font-family: GeneralSans-Medium;
+}
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (min-width : 576px) {}
+
+@media only screen and (min-width : 768px) {}
+
+@media only screen and (min-width : 992px) {}
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1400px) {}

@@ -1,0 +1,30 @@
+.banner{
+    background-color: white;   
+    height: fit-content;
+    
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    right: calc(0px - 30px);
+    top: 50%;
+    transform: translateY(-50%)  rotate(-90deg);
+}
+.banner span{
+    font-size: 16px;   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;   
+}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (min-width : 576px) {}
+
+@media only screen and (min-width : 768px) {}
+
+@media only screen and (min-width : 992px) {}
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1400px) {}

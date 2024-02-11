@@ -1,0 +1,37 @@
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 3vw 2vw 3vw;
+    margin-top: 5vw;
+}
+.general-info span{
+    margin-right: 24px;
+    text-transform: uppercase;
+    font-family: GeneralSans-Medium;
+    font-size: 16px;
+}
+.social-media a{
+    text-transform: uppercase;
+    font-family: GeneralSans-Medium;
+    text-decoration: none;
+    color: white;
+    margin-right: 26px;
+    font-size: 16px;
+}
+.social-media a:nth-last-child(1){
+    margin-right: 0px;
+}
+
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (min-width : 576px) {}
+
+@media only screen and (min-width : 768px) {}
+
+@media only screen and (min-width : 992px) {}
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1400px) {}

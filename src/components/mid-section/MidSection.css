@@ -1,0 +1,54 @@
+.midsection {
+    padding-top: 100px;
+    padding-left: 3vw;
+    padding-right: 10.5vw;
+}
+
+.elem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    font-family: GeneralSans-Medium;
+    color: white;    
+    position: relative;  
+}
+
+.last {
+    border-bottom: 1px solid white;
+}
+
+.elem h1 {
+    opacity: .7;
+    position: relative;
+    line-height: 16vw;
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    /* left: 100px; */
+}
+
+.elem h5 {
+    font-size: 18px;
+}
+
+.elem img {
+    height: 140%;
+    transform: translate(calc(-50% - 3vw),-50%);
+    position: absolute;
+    /* display: none; */
+    opacity: 0;
+    z-index: 999;
+    
+}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (min-width : 576px) {}
+
+@media only screen and (min-width : 768px) {}
+
+@media only screen and (min-width : 992px) {}
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1400px) {}

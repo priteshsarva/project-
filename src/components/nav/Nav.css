@@ -1,0 +1,38 @@
+nav {
+    padding: 30px 2.7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: calc(100vw - calc(2 * 2.7vw));
+    background-color: black;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: GeneralSans-Medium;
+    font-size: 1.1em;
+    color: white;
+}
+
+nav a:nth-child(2) {
+    text-transform: uppercase;
+}
+
+nav a span {
+    font-family: GeneralSans-Regular;
+    opacity: .7;
+}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (min-width : 576px) {}
+
+@media only screen and (min-width : 768px) {}
+
+@media only screen and (min-width : 992px) {}
+
+@media only screen and (min-width : 1200px) {}
+
+@media only screen and (min-width : 1400px) {}
