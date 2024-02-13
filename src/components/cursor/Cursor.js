@@ -11,9 +11,8 @@ const Cursor = () => {
         window.addEventListener('mousemove', (data) => {
             var xdiff = data.clientX - xprev;
             var ydiff = data.clientY - yprev;
-
-            xprev = data.clientX
-            yprev = data.clientY
+            // console.log(data.clientX, data.clientY);
+           
             mouseMove(xdiff, ydiff)
         })
 

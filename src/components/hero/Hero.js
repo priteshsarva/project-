@@ -11,20 +11,20 @@ const Hero = () => {
 
     tl.to("#headinghide", {
       y: 0,
-      delay: .5,
+      // delay: .5,
       duration: 2.5,
       ease: Expo.easeOut,
       stagger: 0.2,
     }).to("#headinghide-inverted", {
       y: 0,
-      delay: -1.5,
+      delay: -2,
       duration: 2.5,
       ease: Expo.easeOut,
-      stagger: 0.2,
+      // stagger: 0.2,
     }).to('#herofooter', {
       y: 0,
-      delay: -1.5,
-      duration: 1.5,
+      delay: -3.5,
+      duration: 2.5,
       ease: Expo.easeInOut
     })
 

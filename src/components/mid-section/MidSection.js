@@ -8,75 +8,52 @@ import { gsap, Power3 } from "gsap";
 
 const MidSection = () => {
 
+  const clamp = (val, min, max) => Math.min(Math.max(val, min), max)
+
+
   useEffect(() => {
+    var ydiff = 0;
+    var xdiff = 0;
+    var rotatdiif = 0;
+    // var rotate = 0;
+    var timeout = 0;
 
-    document.querySelectorAll('.elem').forEach((elem) => {
-      var ydiff = 0;
-      var rotatdiif = 0;
-      var rotate = 0;
-      var timeout;
-
-      elem.addEventListener('mouseleave', () => {
-        console.log("mouse leave", elem.querySelector('h1').innerText);
-        gsap.to(elem.querySelector('img'), {
-          opacity: 0,
-          ease: Power3,
-        });
-        gsap.to(elem.querySelector('h1'), {
-          left: 0,
-          opacity: 1,
-          ease: Power3,
-          duration: 2,
-
-        })
-        gsap.to(elem.querySelector('h5'), {
-
-          opacity: 1,
-          ease: Power3,
-          duration: 2,
-
-        })
-      })
-      elem.addEventListener('mousemove', (data) => {
+    document.querySelectorAll(".elem").forEach((element) => {
+      element.addEventListener("mousemove", (e) => {
         clearTimeout(timeout);
-        ydiff = data.clientY - elem.getBoundingClientRect().top;
-        rotatdiif = rotate - data.clientX;
-        rotate = data.clientX;
-        gsap.to(elem.querySelector('h1'), {
-          left: 50,
-          opacity: 0.3,
-          ease: Power3,
-          duration: 1,
-        })
-        gsap.to(elem.querySelector('h5'), {
-          opacity: 0.3,
-          ease: Power3,
-          duration: 1,
-        })
-        // if (ydiff > elem.getBoundingClientRect().height) {
-        //   gsap.to(elem.querySelector('img'), {
-        //     opacity: 0,
-        //     ease: Power3,
-        //   });
-        // }
-        gsap.to(elem.querySelector('img'), {
+        console.log(e);
+        ydiff = e.clientY - element.getBoundingClientRect().top
+        xdiff = e.clientX - element.querySelector('img').getBoundingClientRect().width / 2
+        rotatdiif = clamp(e.movementX, -20, 20)
+        gsap.to(element.querySelector('img'), {
+          x: xdiff,
+          y: ydiff,
+          rotate: rotatdiif,
           opacity: 1,
-          top: ydiff,
-          left: data.clientX,
-          ease: Power3,
           duration: 1,
-          rotate: gsap.utils.clamp(-20, 20, rotatdiif),
-        });
+          ease: Power3,
+        })
         timeout = setTimeout(() => {
-          elem.querySelector('img').style.transform = `rotate(0)`
+          gsap.to(element.querySelector('img'), {
+            rotate: 0,
+            duration: 1,
+            ease: Power3,
+          })
         }, 100);
-
       })
-    })
-    return () => {
 
-    }
-  },)
+      element.addEventListener("mouseleave", (e) => {
+        gsap.to(element.querySelector('img'), {
+          opacity: 0,
+          duration: 1,
+          ease: Power3,
+        })
+      })
+
+    })
+
+  })
+
 
 
 
