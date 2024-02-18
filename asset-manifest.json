@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project-1-cynthiaugwu/static/css/main.92d6249d.css",
-    "main.js": "/project-1-cynthiaugwu/static/js/main.8b481614.js",
+    "main.css": "/project-1-cynthiaugwu/static/css/main.22ba6099.css",
+    "main.js": "/project-1-cynthiaugwu/static/js/main.16c5c8ba.js",
     "static/media/cynthia.png": "/project-1-cynthiaugwu/static/media/cynthia.62617c4c3526af0c2d00.png",
     "static/media/plug.png": "/project-1-cynthiaugwu/static/media/plug.1606c4ea91f71144a1a6.png",
     "static/media/GeneralSans-Medium.otf": "/project-1-cynthiaugwu/static/media/GeneralSans-Medium.9e7904e31d714524f2d9.otf",
@@ -9,11 +9,11 @@
     "static/media/hudu.png": "/project-1-cynthiaugwu/static/media/hudu.1319c340f775d9aa5d06.png",
     "static/media/ixperience.png": "/project-1-cynthiaugwu/static/media/ixperience.bb2c9d80192828605f05.png",
     "index.html": "/project-1-cynthiaugwu/index.html",
-    "main.92d6249d.css.map": "/project-1-cynthiaugwu/static/css/main.92d6249d.css.map",
-    "main.8b481614.js.map": "/project-1-cynthiaugwu/static/js/main.8b481614.js.map"
+    "main.22ba6099.css.map": "/project-1-cynthiaugwu/static/css/main.22ba6099.css.map",
+    "main.16c5c8ba.js.map": "/project-1-cynthiaugwu/static/js/main.16c5c8ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.92d6249d.css",
-    "static/js/main.8b481614.js"
+    "static/css/main.22ba6099.css",
+    "static/js/main.16c5c8ba.js"
   ]
 }
