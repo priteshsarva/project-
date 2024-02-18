@@ -13,6 +13,10 @@ import Cursor from './components/cursor/Cursor';
 
 function App() {
 
+  document.addEventListener('load',()=>{
+    console.log("load");
+  })
+
   const scrollRef = useRef(null)
 
 

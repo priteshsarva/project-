@@ -15,13 +15,13 @@ const MidSection = () => {
     var ydiff = 0;
     var xdiff = 0;
     var rotatdiif = 0;
-    // var rotate = 0;
     var timeout = 0;
 
     document.querySelectorAll(".elem").forEach((element) => {
       element.addEventListener("mousemove", (e) => {
         clearTimeout(timeout);
         console.log(e);
+        element.querySelector('img').style = ` display : block`
         ydiff = e.clientY - element.getBoundingClientRect().top
         xdiff = e.clientX - element.querySelector('img').getBoundingClientRect().width / 2
         rotatdiif = clamp(e.movementX, -20, 20)
@@ -30,8 +30,15 @@ const MidSection = () => {
           y: ydiff,
           rotate: rotatdiif,
           opacity: 1,
-          duration: 1,
+          duration: .5,
           ease: Power3,
+        })
+        gsap.to(element.querySelector('h1'), {
+          x: 40,
+          opacity: .3,
+          duration: .5,
+          ease: Power3,
+
         })
         timeout = setTimeout(() => {
           gsap.to(element.querySelector('img'), {
@@ -43,17 +50,26 @@ const MidSection = () => {
       })
 
       element.addEventListener("mouseleave", (e) => {
+        console.log("mouse leave fired");
+        element.querySelector('img').style = ` display : none`
         gsap.to(element.querySelector('img'), {
+          x: 0,
+          y: 0,
           opacity: 0,
-          duration: 1,
+          duration: .5,
           ease: Power3,
+        })
+        gsap.to(element.querySelector('h1'), {
+          x: 0,
+          opacity: .7,
+          duration: .5,
+          ease: Power3,
+
         })
       })
 
     })
-
   })
-
 
 
 

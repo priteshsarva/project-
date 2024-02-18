@@ -13,6 +13,8 @@
     color: white;
     position: relative;
     background-color: black;
+    will-change: auto;
+
 }
 
 .last {
@@ -34,9 +36,9 @@
 
 .elem img {
     height: 140%;
-    /* transform: translate(calc(-50% - 3vw), -50%); */
     position: absolute;
-    /* display: none; */
+    display: none;
+    cursor: none;
     left: -3vw;
     top: -70%;
     opacity: 0;
